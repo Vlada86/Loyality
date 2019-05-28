@@ -45,6 +45,12 @@ public class CacheConfiguration {
             createCache(cm, com.balkan.software.engineering.domain.User.class.getName() + ".authorities");
             createCache(cm, com.balkan.software.engineering.domain.PersistentToken.class.getName());
             createCache(cm, com.balkan.software.engineering.domain.User.class.getName() + ".persistentTokens");
+            createCache(cm, com.balkan.software.engineering.domain.RfbLocation.class.getName());
+            createCache(cm, com.balkan.software.engineering.domain.RfbLocation.class.getName() + ".rvbEvents");
+            createCache(cm, com.balkan.software.engineering.domain.RfbEvent.class.getName());
+            createCache(cm, com.balkan.software.engineering.domain.RfbEvent.class.getName() + ".rfbEventAttendances");
+            createCache(cm, com.balkan.software.engineering.domain.RfbEventAttendance.class.getName());
+            createCache(cm, com.balkan.software.engineering.domain.RfbUser.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
